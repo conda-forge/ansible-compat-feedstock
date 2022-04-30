@@ -13,16 +13,16 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
+  noarch: python
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.8
     - setuptools_scm >=3.5.0
     - setuptools_scm_git_archive >=1.0
   run:
-    - cached-property ~=1.5  # [py<=37]
-    - python
+    - python >=3.8
     - pyyaml
     - subprocess-tee
 
