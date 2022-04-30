@@ -1,5 +1,5 @@
 {% set name = "ansible-compat" %}
-{% set version = "1.0.0" %}
+{% set version = "2.0.2" %}
 
 
 package:
@@ -8,21 +8,21 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ansible-compat-{{ version }}.tar.gz
-  sha256: 2ade2acbd1d7868eeb602c682afe92bc8c05480333205c328b4c2a1b09f970a4
+  sha256: c651995dc323ef145bab857fee6540febc881fb71b7feafe8163d49e273163a5
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
+  noarch: python
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.8
     - setuptools_scm >=3.5.0
     - setuptools_scm_git_archive >=1.0
   run:
-    - cached-property ~=1.5  # [py<=37]
-    - python
+    - python >=3.8
     - pyyaml
     - subprocess-tee
 
