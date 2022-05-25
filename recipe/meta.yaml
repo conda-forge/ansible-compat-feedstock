@@ -23,6 +23,7 @@ requirements:
     - setuptools_scm_git_archive >=1.0
   run:
     - python >=3.8
+    - jsonschema
     - pyyaml
     - subprocess-tee
 
