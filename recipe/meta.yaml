@@ -26,6 +26,7 @@ requirements:
     - jsonschema
     - pyyaml
     - subprocess-tee
+    - packaging
 
 test:
   imports:
