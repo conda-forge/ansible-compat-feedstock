@@ -1,11 +1,11 @@
-About ansible-compat
-====================
+About ansible-compat-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ansible-compat-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ansible-community/ansible-compat
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ansible-compat-feedstock/blob/main/LICENSE.txt)
 
 Summary: Ansible compatibility goodies
 
