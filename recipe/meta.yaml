@@ -1,5 +1,5 @@
 {% set name = "ansible-compat" %}
-{% set version = "2.2.7" %}
+{% set version = "3.0.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ansible-compat-{{ version }}.tar.gz
-  sha256: 08deddcd0a1dc6baabe674b07c6ff882118492c123d281f56f01905271a7ffc4
+  sha256: a10ea191f9efe08590ff64cb46a31af1f8142c08618db1a4bc827ed257c68230
 
 build:
   number: 0
@@ -23,10 +23,11 @@ requirements:
     - setuptools_scm_git_archive >=1.0
   run:
     - python >=3.8
-    - jsonschema
+    - ansible-core >=2.12
     - pyyaml
-    - subprocess-tee
+    - subprocess-tee >=0.4.1
     - packaging
+    - jsonschema >=4.6.0
 
 test:
   imports:
