@@ -23,10 +23,11 @@ requirements:
     - setuptools_scm_git_archive >=1.0
   run:
     - python >=3.8
-    - jsonschema
+    - ansible-core >=2.12
     - pyyaml
-    - subprocess-tee
+    - subprocess-tee >=0.4.1
     - packaging
+    - jsonschema >=4.6.0
 
 test:
   imports:
