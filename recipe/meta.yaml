@@ -21,6 +21,7 @@ requirements:
     - python >=3.8
     - setuptools_scm >=3.5.0
     - setuptools_scm_git_archive >=1.0
+    - setuptools
   run:
     - python >=3.8
     - ansible-core >=2.12
