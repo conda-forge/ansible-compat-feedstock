@@ -1,5 +1,5 @@
 {% set name = "ansible-compat" %}
-{% set version = "25.8.1" %}
+{% set version = "25.8.2" %}
 {% set python_min = "3.10" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: f29ab81264b3f04fb94ac2d7f68fe73efc2eb3cbe4ecf00f9b4742e77c41756f
+  sha256: c5ae1ff70938f1e009cfc7df66c9faad223a3ccd0ad6b57400de53b2459a6164
 
 build:
   number: 0
