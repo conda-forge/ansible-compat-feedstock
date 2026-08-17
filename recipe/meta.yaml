@@ -25,7 +25,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - ansible-core >=2.14
+    - ansible-core >=2.18
     - pyyaml
     - subprocess-tee >=0.4.1
     - packaging
