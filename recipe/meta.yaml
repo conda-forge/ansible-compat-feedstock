@@ -1,6 +1,6 @@
 {% set name = "ansible-compat" %}
-{% set version = "26.6.0" %}
-{% set python_min = "3.10" %}
+{% set version = "26.8.0" %}
+{% set python_min = "3.12" %}
 
 
 package:
@@ -8,8 +8,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ad00d3cff84a961165a7dd90f175fd9a4584e2e602e9d8af2062ce7c479dd350
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 1254bd1db72dcc93b74774f54b81e272260d3cd34ba5d595d42ca2dd9c46f7de
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - ansible-core >=2.14
+    - ansible-core >=2.18
     - pyyaml
     - subprocess-tee >=0.4.1
     - packaging
